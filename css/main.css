@@ -1,1 +1,35 @@
-/* No CSS */
+body {
+  background: #0f0e17;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#search {
+  display: block;
+  width: 45%;
+  border: 3px solid black;
+  padding: 0.5rem 0.7rem;
+  margin: 2rem auto;
+  border-radius: 2px;
+  outline: none;
+}
+
+#search:focus {
+  -webkit-box-shadow: 0 0 5px #ff8906;
+          box-shadow: 0 0 5px #ff8906;
+  border: 1px solid #ff8906;
+}
+
+.gallery {
+  max-width: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  grid-gap: 3rem 2rem;
+}
